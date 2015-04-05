@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Jatan Patel | Graduate Student at University of Texas at Dallas</title>
+		<link rel="stylesheet" href="css/bootstrap.css"  type="text/css"/>
+		<link rel="stylesheet" href="css/mystyle.css"  type="text/css"/>
+		<link id="scrollUpTheme" rel="stylesheet" href="css/image.css" type="text/css"/>
+		<!--script src="http://code.jquery.com/jquery-1.10.1.min.js"></script-->
+		<script src="js/jquerymin.js"></script>
+		<script src="js/jquery_ui.js" type="text/javascript"></script>
+		<script src="js/jquery_ui_touch.js" type="text/javascript"></script>
+		<script src="js/PxLoader.js"	type="text/javascript"></script>
+		<script src="js/PxLoaderImage.js" type="text/javascript"></script>
+		<script src="js/myscript.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/common.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+		google.load("visualization", "1", {packages:["gauge"]});
+		google.setOnLoadCallback(drawChart);
+		var flag=0;
+		function drawChart()
+		{
+			var data1 = google.visualization.arrayToDataTable([
+			  ['Label', 'Value'],
+			  ['JAVA', 80],
+			  ['C', 70],
+			  ['C++', 80],
+			  ['SQL', 75],
+			  ['Python', 30]
+			  
+			]);
+			var data2 = google.visualization.arrayToDataTable([
+			  ['Label', 'Value'],
+			  ['JavaScript', 80],
+			  ['jQuery', 80],
+			  ['HTML5', 85],
+			  ['CSS3', 75],
+			  ['PHP', 65]
+			]);
+			var options = {
+			  width: 1138, height: 300,
+			  redFrom: 90, redTo: 100,
+			  yellowFrom:75, yellowTo: 90,
+			  minorTicks: 5
+			};
+			var chart1 = new google.visualization.Gauge(document.getElementById('chart_div1'));
+			var chart2 = new google.visualization.Gauge(document.getElementById('chart_div2'));
+			google.visualization.events.addListener(chart1, 'ready', function () {
+				$('#chart_div1 circle:nth-child(1)').attr('fill', 'chocolate');
+				$('#chart_div1 circle:nth-child(2)').attr('fill', 'white');
+				$('#chart_div2 circle:nth-child(1)').attr('fill', 'chocolate');
+				$('#chart_div2 circle:nth-child(2)').attr('fill', 'white');
+			});
+			chart1.draw(data1, options);
+			chart2.draw(data2, options);
+			setInterval(function() {
+			  if(flag==0)
+			  {
+				  for(var i=0;i<5;i++)
+				  {
+					data1.setValue(i,1,parseInt(data1['Cc'][i][1]['ef'])+2);
+					data2.setValue(i,1,parseInt(data2['Cc'][i][1]['ef'])+2);
+				  }
+				  flag=1;
+			  }
+			  else
+			  {
+				  for(var i=0;i<5;i++)
+				  {
+					data1.setValue(i,1,parseInt(data1['Cc'][i][1]['ef'])-2);
+					data2.setValue(i,1,parseInt(data2['Cc'][i][1]['ef'])-2);
+				  }
+				  flag=0;
+			  }
+			  chart1.draw(data1, options);
+			  chart2.draw(data2, options);
+			}, 500);
+		}
+		</script>
+		<script src="js/jquery.sequence-min.js"></script>
+		<script src="js/sequencejs-options.sliding-horizontal-parallax.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollUp.js"></script>
+		<script>
+            $(function () {
+                        $.scrollUp({
+                            animation: 'fade',
+                            activeOverlay: '#00FFFF',
+                            scrollImg:
+							{
+                                active: true,
+                                type: 'background',
+                                src: '../img/top.png'
+                            }
+                        });
+                    $('.image-switch').addClass('active');
+			});
+
+        </script>
+	</head>
+	<body>
+		<div id="loader" align="center"><br><img id = "preLoadedImage" src="img/loading.gif"/><br><p id = 'loading'>Loading...</p></div>
+		<div class="container" onresize="containerResize()">
+			<div class="navbar">
+			  <div class="navbar-inner">
+				<div class="container">
+				  <ul class="nav">
+					<li class="active"><a class="menubar" href="#home">HOME</a></li>
+					<li><a class="menubar" href="#skills">SKILLS</a></li>
+					<li><a class="menubar" href="#education">EDUCATION</a></li>
+					<li><a class="menubar" href="#projects">PROJECTS</a></li>
+					<li><a class="menubar" href="#work">WORK</a></li>
+					<li><a class="menubar" href="#contact">CONTACT</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+			<div id="hello">This world is but a &lt;canvas&gt; to our imagination.&nbsp;&nbsp;-<i id="hello1">Henry David Thoreau</i></div>
+			<section id="home">
+			<div class="main">
+				<div id="pic">
+					<img id="me" style="border-radius: 400px;width: 320px;height: 400px;"src="img/me.jpg"></img>
+				</div>
+				<h1 id="myname">Jatan Patel</h1>
+				<canvas id="matrix" width="1138" height="500"></canvas>
+			</div>
+			<a href="https://www.dropbox.com/s/nnpzgjlthfubjb6/Resume_Jatan.pdf?dl=0" id="resume" class="btn btn-large btn-success">View My Resume</a>
+			</section>
+			<br><br><br><br><br><br><br><br><br>
+			<section id="skills">
+				<br><br><br>
+				<h1 id="skill">Skills</h1>
+				<div id="chart_div1" style="width: 1138px; height: 300px;"></div>
+				<div id="chart_div2" style="width: 1138px; height: 300px;"></div>
+				<div id="tools" class="sub_skills">
+					<h2>Tools & Technologies</h2>
+					 JCanvas, three.js, d3.js, Angular.js, Node.js, BootStrap Framework, Github, WordPress, Android SDK, WAMP, Eclipse IDE, Microsoft Visual Studio, NetBeans, MATLAB, Twitter Bootstrap, Firebug
+				</div>
+				<br>
+				<br>
+				<div id="interests" class="sub_skills">
+					<h2>Interests</h2>
+					Machine Learning, Artificial Intelligence, Natural Language Processing, Front End Development, Software Development, Mobile Applications Development, User Interface, Project management, Web Development & Design, UX, Software Design
+				</div>
+			</section>
+			<br><br><br><br><br><br>
+			<section id="education">
+				<br><br><br>
+				<h1 id="skill">Education</h1>
+				<iframe id="if1" src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Ag_LM0dYbCkudEpiZmNMMkZ0NHNWYVF1ZGxGTnVVS0E&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
+			</section>
+			<br><br><br><br><br><br>
+			<section id="projects">
+				<br><br>
+				<h1 id="skill">Projects</h1>
+				<div id="sequence">
+					<img class="sequence-prev" src="img/bt-prev.png" alt="Previous" />
+					<img class="sequence-next" src="img/bt-next.png" alt="Next" />
+
+					<ul class="sequence-canvas">
+						<li class="animate-in">
+							<div class="info">
+								<h2>Airline Reservation System</h2>
+								<dl>
+									<dt>Objective</dt>
+										<dd><ul><li>Airline Reservation System for travelling in USA</li></ul></dd>
+									<dt>GitHub Link : <a href="https://github.com/jatanpatel92/Airline-Reservation-System">Airline Reservation System</a></dt>
+									<dt>Tools</dt>
+										<dd><ul><li>PHP, MySQL, HTML5, JavaScript, jQuery, AJAX, CSS3 (Bootstrap)</li></ul></dd>
+									<dt>My Contribution</dt>
+										<dd>
+											<ul>
+												<li>
+													Design and implemented an online flight reservation system with features like 'Flight Search', 'Seat Availability', 'Fare Information' and 'Passenger Manifest'. Enabled the search feature to explore over 3000 flights and show results with upto 2 connecting flights. Applied validations for user assistance.
+												</li>
+												<li>
+													Enabled the search feature to explore over 3000 flights and show results with upto 2 connecting flights. Applied validations for user assistance.
+												</li>
+												<li>
+													Applied validations for user assistance.
+												</li>
+											</ul>
+										</dd>
+								</dl>
+								<!--p>
+									<b>Objective: </b><br>Airline Reservation System for travelling in USA<br>
+									<b>GitHub Link : </b><a href="https://github.com/jatanpatel92/Airline-Reservation-System">Airline Reservation System</a><br>
+									<b>Tools: </b>PHP, MySQL, HTML5, JavaScript, jQuery, AJAX, CSS3 (Bootstrap)<br>
+									<b>My Contribution: </b><br>Design and implemented an online flight reservation system with features like 'Flight Search', 'Seat Availability', 'Fare Information' and 'Passenger Manifest'. Enabled the search feature to explore over 3000 flights and show results with upto 2 connecting flights. Applied validations for user assistance.
+								</p-->
+							</div>
+							<img class="aeroplane" id="aeroplane" src="img/aeroplane.png" alt="aeroplane" />
+						</li>
+						<li class="animate-in">
+							<div class="info">
+								<h2>Blood4Lives - A Virtual Blood Bank</h2>
+								<dl>
+									<dt>Objective</dt>
+										<dd><ul><li>An android application and Web server connecting blood seekers with eligible and potential blood donors</li></ul></dd>
+									<dt>GitHub Link : <a href="https://github.com/jatanpatel92/Blood4Lives">Blood4Lives</a></dt>
+									<dt>Tools</dt>
+										<dd><ul><li>Android SDK, RESTful, XML, PHP, MySQL</li></ul></dd>
+									<dt>My Contribution</dt>
+										<dd>
+											<ul>
+												<li>
+													Worked on both Server and Client sides.
+												</li>
+												<li>
+													 Implemented Google Cloud Messaging (GCM) for Push Notifications and integrated with core version of the code as a part of Feature Driven Development (FDD) type of Agile Methodology.
+												</li>
+												<li>
+													Server Side development in PHP.
+												</li>
+											</ul>
+										</dd>
+								</dl>
+								<!--p>
+									<b>Objective: </b><br>An android application and Web server connecting blood seekers with eligible and potential blood donors<br>
+									<b>GitHub Link : </b><a href="https://github.com/jatanpatel92/Blood4Lives">Blood4Lives</a><br>
+									<b>Tools: </b>Android SDK, XML, PHP, MySQL<br>
+									<b>My Contribution: </b><br>Worked on both Server and Client sides: Implemented Google Cloud Messaging (GCM) for Push Notifications and integrated with core version of the code as a part of Feature Driven Development (FDD) type of Agile Methodology. Server Side development in PHP.
+								</p-->
+							</div>
+							<img class="balloon" id="android" src="img/android.png" alt="Balloon" />
+						</li>
+						<li>
+							<div class="info">
+								<h2>NIMS - NGO Information Management Suite</h2>
+								<dl>
+									<dt>Objective</dt>
+										<dd><ul><li>Client-Server architecture based information management system supporting the operations of our client NGO with user friendly features like cataloguing the work, evaluating the NGO projects and its employee performance as well as creating social maps of the population and the areas in which the NGO operates</li></ul></dd>
+									<dt>GitHub Link : <a href="https://github.com/jatanpatel92/NIMS">NIMS</a></dt>
+									<dt>Tools</dt>
+										<dd><ul><li>Android SDK, PHP, JavaScript, jQuery, XML, RESTful, Google Developers API, Timeline, MySQL, HTML5, CSS3(Twitter Bootstrap)</li></ul></dd>
+									<dt>My Contribution</dt>
+										<dd>
+											<ul>
+												<li>
+													I was part of the server side team and played a major role in developing the live content management system(CMS) which allows the NGO admin to view, edit and analyse the work of the NGO.
+												</li>
+												<li>
+													 Integrated SIMILE (MIT) Timeline (timeline.js) on the server side website along with the data visualization APIs like 3D Google Pie charts and Google Maps.
+												</li>
+											</ul>
+										</dd>
+								</dl>
+								<!--p>
+									<b>Objective: </b><br>Client-Server architecture based information management system supporting the operations of our client NGO with user friendly features like cataloguing the work, evaluating the NGO projects and its employee performance as well as creating social maps of the population and the areas in which the NGO operates<br>
+									<b>GitHub Link : </b><a href="https://github.com/jatanpatel92/NIMS">NIMS</a><br>
+									<b>Tools: </b>Android SDK, PHP, JavaScript, jQuery, XML, RESTful, Google Developers API, Timeline, MySQL, HTML5, CSS3(Twitter Bootstrap)<br>
+									<b>My Contribution: </b><br>  
+								</p-->
+							</div>
+							<img class="nims" id="nims" src="img/nims.png" alt="NIMS" />
+						</li>
+						<li>
+							<div class="info">
+								<h2>Online Career Services Management System</h2>
+								<dl>
+									<dt>Objective</dt>
+										<dd><ul><li>Web based software for carrier services with the facilities like online registration, resume upload/view, upcoming company information, Live feeds and other useful features assisting Placement Cell, DA-IICT</li></ul></dd>
+									<dt>Live Link : <a href="http://placement.daiict.ac.in">DA-IICT placement</a></dt>
+									<dt>Tools</dt>
+										<dd><ul><li>PHP, JavaScript, jQuery, MySQL, HTML5, CSS3</li></ul></dd>
+									<dt>My Contribution</dt>
+										<dd>
+											<ul>
+												<li>
+													My experience as a member of placement cell helped me to lead a team of 4 dedicated developers for this project.
+												</li>
+												<li>
+													 Designed the UI and database by understanding the requirements of the committee and engineered the system.
+												</li>
+											</ul>
+										</dd>
+								</dl>
+								<!--p>
+									<b>Objective: </b><br><br>
+									<b>Link: </b><br>
+									<b>Tools: </b><br>
+									<b>My Contribution: </b><br> 
+								</p-->
+							</div>
+							<img class="placement" src="img/placement.png" alt="placement" />
+						</li>
+						<li>
+							<div class="info">
+								<h2>Text Conversion Tool : Non-Unicode to Unicode</h2>
+								<dl>
+									<dt>Objective</dt>
+										<dd><ul><li>Effective desktop publishing in Indian Regional Languages</li></ul></dd>
+									<dt>Research Paper Link : <a href="https://www.researchgate.net/publication/258029934_Text_Conversion_Tool_Non_Unicode_to_">Text Conversion tool</a></dt>
+									<dt>Tools</dt>
+										<dd><ul><li>JAVA</li></ul></dd>
+									<dt>My Contribution</dt>
+										<dd>
+											<ul>
+												<li>
+													Drafted the algorithm to convert DOS based Non-Unicode fonts into Unicode.
+												</li>
+												<li>
+													 Created a conversion tool in JAVA which utilizes Hash Map. Built a team of researchers in order to progress further in future.
+												</li>
+												<li>
+													 Over 300 downloads of the paper till present.
+												</li>
+											</ul>
+										</dd>
+								</dl>
+								<!--p>
+									<b>Objective: </b><br><br>
+									<b>Research Paper Link: </b><br>
+									<b>Tools: </b><br>
+									<b>My Contribution: </b><br> 
+								</p-->
+							</div>
+							<img class="unicode" src="img/unicode.jpg" alt="Unicode" />
+						</li>
+						<li>
+							<div class="info">
+								<h2>Online Library Administration System</h2>
+								<dl>
+									<dt>Objective</dt>
+										<dd><ul><li>Database and GUI Design to assist Library</li></ul></dd>
+									<dt>GitHub Link : <a href="https://github.com/jatanpatel92/Online-Library-Administration-System">Library Admin</a></dt>
+									<dt>Tools</dt>
+										<dd><ul><li>MySQL, JAVA, JSP, Servlet, JDBC</li></ul></dd>
+									<dt>My Contribution</dt>
+										<dd>
+											<ul>
+												<li>
+													Fully developed the web application with various modules including 'Add Borrower', 'Books Check-in', 'Check out', 'Search' as well as 'Fines update and payment'.
+												</li>
+											</ul>
+										</dd>
+								</dl>
+								<!--p>
+									<b>Objective: </b><br>
+									<b>GitHub Link : </b><br>
+									<b>Tools: </b><br>
+									<b>My Contribution: </b><br> 
+								</p-->
+							</div>
+							<img class="library" src="img/library.jpg" alt="Library" />
+						</li>
+						<li>
+							<div class="info">
+								<h2>myDatabase</h2>
+								<dl>
+									<dt>Objective</dt>
+										<dd><ul><li>A Low Maintenance Database Software for Textual Data</li></ul></dd>
+									<dt>GitHub Link : <a href="https://github.com/jatanpatel92/myDatabase">Database Management System</a></dt>
+									<dt>Tools</dt>
+										<dd><ul><li>JAVA</li></ul></dd>
+									<dt>My Contribution</dt>
+										<dd>
+											<ul>
+												<li>
+													Worked individually to establish a database software using core JAVA which stores textual data in files.
+												</li>
+												<li>
+													Implemented all 4 database functions: Selection, Insertion, Deletion and Updation by applying Random Access File Connector and Hash Map.
+												</li>
+												<li>
+													Query Optimization with the help of Indexing.
+												</li>
+											</ul>
+										</dd>
+								</dl>
+								<!--p>
+									<b>Objective: </b><br>
+									<b>GitHub Link : </b><br>
+									<b>Tools: </b><br>
+									<b>My Contribution: </b><br>
+								</p-->
+							</div>
+							<img class="database" src="img/database.png" alt="Database" />
+						</li>
+					</ul>
+				</div>
+			</section>
+			<br><br><br><br><br><br>
+			<section id="work">
+				<br><br><br>
+				<h1 id="skill">Work</h1>
+				<div id="ei">
+					<table style="width:40%;text-align: center">
+						<tr>
+							<td><img id="ei" src="img/ei.jpg"></img></td>
+							<td><a href="http://www.mindspark.in/"><h2>Educational Initiatives</h2></a></td>						
+						</tr>
+					</table>
+					<h3>Jr. Software Engineer (Software Developer Equivalent)</h3>
+					<dl>
+						<dt>What I did?</dt>
+							<dd>
+								<ul>
+									<li>
+										Reengineered and upgraded the web based project ‘MindSparkEI’ (Maths) as part of designing cross browser compatible interactive, self-adaptive and self-learning product.
+									</li>
+									<li>
+										Builded 2 important JavaScript libraries with customization functionalities to increase the coding standards: Common.js, Graph.js
+									</li>
+									<li>
+										<b>Mathematical interactive tools:</b> by utilizing 3D libraries such as three.js; 2D and 3D screens for students to solve graph related high school geometry problems 
+									</li>
+									<li>
+										<b>Common.js:</b> A library of all the common configuration functions to assist faster development.
+									</li>
+									<li>
+										Enhanced Graph.js library such that other developers can easily grasp the functionalities and the library can smoothly be adapted.
+									</li>
+									<li>
+										Developed Many Graphic modules as part of designing cross browser compatible HTML5 Educational Games.
+									</li>
+								</ul>
+							</dd>
+						<dt>Tools</dt>
+							<dd><ul><li>HTML5, CSS3, JavaScript, PHP</li></ul></dd>
+						<dt>Libraries</dt>
+							<dd><ul><li>jQuery, common.js, graph.js, jCanvas.js, d3.js, three.js</li></ul></dd>
+						<dt>Product : <a href="http://www.mindspark.in/">MindSpark</a></dt>
+					</dl>
+					<h2 style="text-align:center">Glimpse of My work</h2>
+					<table style="width:100%">
+						<tr>
+							<td>
+								<!--a href="#popupVideo" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src="img/1.png"/></a-->
+								<div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+									<iframe id="if2" src="http://mindspark-ei.s3.amazonaws.com/Enrichment_Modules/html5/introduction/227/src/index.html?noOfLevels=1&levelWiseMaxScores=0&lastLevelCleared=0&previousLevelLock=1" width="550" height="600" seamless=""></iframe>
+								</div>
+							</td>
+							<td>
+								<!--a href="#popupVideo" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src="img/2.png"/></a-->
+								<div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+									<iframe id="if3" src="http://mindspark-ei.s3.amazonaws.com/Enrichment_Modules/html5/introduction/244/src/index.html?noOfLevels=1&levelWiseMaxScores=0&lastLevelCleared=0&previousLevelLock=1" width="550" height="600" seamless=""></iframe>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<table style="width:100%">
+						<tr>
+							<td>
+								<div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+									<iframe id="if4" src="http://mindspark-ei.s3.amazonaws.com/Enrichment_Modules/html5/questions/ADG/ADG_qcode_57718_1/src/index.html?m=0.5&b=0&showAns=false" width="100%" height="600" seamless=""></iframe>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section id="contact">
+				<br><br><br>
+				<h1 id="skill">Contact Me</h1>
+					<table style="width:100%;text-align: center">
+						<tr>
+							<td>
+								<a href="https://github.com/jatanpatel92"><img class="icons" src="img/git.png"/>GitHub</a>
+							</td>
+							<td>
+								<a href="https://www.linkedin.com/in/jatanpatel/en"><img class="icons" src="img/ln.png"/>LinkedIn</a>
+							</td>
+							<td>
+								<a href="https://www.facebook.com/jatan.patel.j10"><img class="icons" src="img/fb.png"/>Facebook</a>
+							</td>
+						</tr>
+					</table>
+			</section>
+		</div>
+	</body>
+</html>
