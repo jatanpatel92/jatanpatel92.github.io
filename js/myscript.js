@@ -102,3 +102,6 @@ $("skills").click(function ()
 	console.log("skills");
 	//$("#lnProfile").css({'cursor':'pointer'});
 });
+function getRandomInt (minimum, maximum) {
+	return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+}
