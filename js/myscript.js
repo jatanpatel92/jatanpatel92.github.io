@@ -1,7 +1,7 @@
 $(document).ready(function(e) {
     $(function(){
 		$('.container').hide();
-		var imageArray = new Array('1.png','2.png','3.png','aeroplane.png','android.png','bt-next.png','bt-prev.png','database.png','fb.png','ln.png','git.png','top.png','library.jpg','nims.png','placement.png','unicode.jpg','me.jpg','ei.jpg');
+		var imageArray = new Array('aeroplane.png','android.png','bt-next.png','bt-prev.png','database.png','fb.png','ln.png','git.png','top.png','library.jpg','nims.png','placement.png','unicode.jpg','me.jpg','ei.jpg');
 		var loader = new PxLoader(); 	
 		$.each(imageArray,function(key,value1){
 			var pxImage = new PxLoaderImage('img/'+value1); 
