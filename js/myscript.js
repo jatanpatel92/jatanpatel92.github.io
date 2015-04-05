@@ -7,8 +7,7 @@ $(document).ready(function(e) {
 			var pxImage = new PxLoaderImage('img/'+value1); 
 			loader.add(pxImage); 
 		}); 
-		
-					
+			
 			loader.addCompletionListener(function() { 
 				$('#if1').on("load", function() {
 				
