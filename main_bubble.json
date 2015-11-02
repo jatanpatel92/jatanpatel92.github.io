@@ -1,0 +1,36 @@
+{
+	"name":"bubble", "children": [
+		{"name": "Back-End", "description": "",
+		"children":[
+			{"name": "JAVA"},
+			{"name": "PHP"},
+			{"name": "Python"},
+			{"name": "NodeJS"}
+		]},
+		{"name":"Front-End",
+		"children":[
+			{"name": "HTML5"},
+			{"name": "CSS3"},
+			{"name": "JavaScript"},
+			{"name": "jQuery"},
+			{"name": "AngularJS"},
+			{"name": "d3JS"}
+		]},
+		{"name":"Database", 
+		"children":[
+			{"name": "MySQL"},
+			{"name": "MongoDB"},
+			{"name": "SQLite"},
+			{"name": "Elasticsearch"}
+		]},
+		{"name":"Full-Stack", 
+		"children":[
+			{"name": "Django"},
+			{"name": "MEAN"},
+			{"name": "LAMP"},
+			{"name": "WAMP"},
+			{"name": "ELK"},
+			{"name": "Meteor"}
+		]}
+	]
+}

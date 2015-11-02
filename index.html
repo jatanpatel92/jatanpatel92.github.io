@@ -1,527 +1,883 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Jatan Patel | Graduate Student at University of Texas at Dallas</title>
-		<link rel="shortcut icon" href="img/me.jpg"/>
-		<link rel="stylesheet" href="css/bootstrap.css"  type="text/css"/>
-		<link rel="stylesheet" href="css/mystyle.css"  type="text/css"/>
-		<link id="scrollUpTheme" rel="stylesheet" href="css/image.css" type="text/css"/>
-		<!--script src="http://code.jquery.com/jquery-1.10.1.min.js"></script-->
-		
-	</head>
-	<body>
-		<div id="loader" align="center"><br><img id = "preLoadedImage" src="img/loading.gif"/><br><p id = 'loading'>Loading...</p></div>
-		<div class="container" onresize="containerResize()" style="display:none">
-			<div class="navbar">
-			  <div class="navbar-inner">
-				<div class="container">
-				  <ul class="nav">
-					<li class="active"><a class="menubar" href="#home">HOME</a></li>
-					<li><a class="menubar" href="#skills">SKILLS</a></li>
-					<li><a class="menubar" href="#education">EDUCATION</a></li>
-					<li><a class="menubar" href="#projects">PROJECTS</a></li>
-					<li><a class="menubar" href="#work">WORK</a></li>
-					<li><a class="menubar" href="#contact">CONTACT</a></li>
-				  </ul>
-				</div>
-			  </div>
-			</div>
-			<div id="hello">This world is but a &lt;canvas&gt; to our imagination.&nbsp;&nbsp;-<i id="hello1">Henry David Thoreau</i></div>
-			<section id="home">
-			<div class="main">
-				<div id="pic">
-					<img id="me" style="border-radius: 400px;width: 320px;height: 400px;"src="img/me.jpg"></img>
-				</div>
-				<h1 id="myname">Jatan Patel</h1>
-				<canvas id="matrix" width="1138" height="500"></canvas>
-			</div>
-			<a href="https://www.dropbox.com/s/nnpzgjlthfubjb6/Resume_Jatan.pdf?dl=0" id="resume" class="btn btn-large btn-success">View My Resume</a>
-			</section>
-			<br><br><br><br><br><br><br><br><br>
-			<section id="skills">
-				<br><br><br>
-				<h1 id="skill">SKILLS</h1>
-				<div id="chart_div1" style="width: 1138px; height: 300px;"></div>
-				<div id="chart_div2" style="width: 1138px; height: 300px;"></div>
-				<div id="tools" class="sub_skills">
-					<h2><b>TOOLS & TECHNOLOGIES</b></h2>
-					<table style="width:100%">
-						<tr>
-							<td>AngularJS</td>
-							<td>Node.JS</td>
-							<td>jCanvas</td>
-						</tr>
-						<tr>
-							<td>Bootstrap</td>
-							<td>three.JS</td>
-							<td>d3.JS</td>
-						</tr>
-						<tr>
-							<td>MySQL Workbench</td>
-							<td>Firebug</td>
-							<td>Hadoop (Learning)</td>
-						</tr>
-						<tr>
-							<td>Mahout (Learning)</td>
-							<td>UNIX</td>
-							<td>Linux</td>
-						</tr>
-						<tr>
-							<td>EclipseIDE</td>
-							<td>NetBeans</td>
-							<td>Android SDK</td>
-						</tr>
-						<tr>
-							<td>MATLAB</td>
-							<td>OpenCV</td>
-							<td>OpenGL</td>
-						</tr>
-						<tr>
-							<td>Microsoft Visual Studio</td>
-							<td>Microsoft Windows</td>
-							<td>MS Office Tools</td>
-						</tr>
-					</table> 
-				</div>
-				<br>
-				<br>
-				<div id="interests" class="sub_skills">
-					<h2><b>INTERESTS</b></h2>
-					<table style="width:100%">
-						<tr>
-							<td>Machine Learning</td>
-							<td>Artificial Intelligence</td>
-							<td>Natural Language Processing</td>
-						</tr>
-						<tr>
-							<td>Software Development</td>
-							<td>Mobile Applications Development</td>
-							<td>User Interface/ User Experience</td>
-						</tr>
-						<tr>
-							<td>Software Design</td>
-							<td>Web & Graphics Design</td>
-							<td>Project management</td>
-						</tr>
-					</table>
-				</div>
-			</section>
-			<section id="education">
-				<br><br><br>
-				<h1 id="skill">EDUCATION</h1>
-				<iframe id="if1" src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Ag_LM0dYbCkudEpiZmNMMkZ0NHNWYVF1ZGxGTnVVS0E&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
-			</section>
-			<br><br><br><br><br><br>
-			<section id="projects">
-				<br><br>
-				<h1 id="skill">PROJECTS</h1>
-				<div id="sequence">
-					<img class="sequence-prev" src="img/bt-prev.png" alt="Previous" />
-					<img class="sequence-next" src="img/bt-next.png" alt="Next" />
+<head>
 
-					<ul class="sequence-canvas">
-						<li class="animate-in">
-							<div class="info">
-								<h2>Airline Reservation System</h2>
-								<dl>
-									<dt>Objective</dt>
-										<dd><ul><li>Airline Reservation System for travelling in USA</li></ul></dd>
-									<dt>GitHub Link : <a href="https://github.com/jatanpatel92/Airline-Reservation-System">Airline Reservation System</a></dt>
-									<dt>Tools</dt>
-										<dd><ul><li>PHP, MySQL, HTML5, JavaScript, jQuery, AJAX, CSS3 (Bootstrap)</li></ul></dd>
-									<dt>Contribution</dt>
-										<dd>
-											<ul>
-												<li>
-													Design and implemented an online flight reservation system with features like 'Flight Search', 'Seat Availability', 'Fare Information' and 'Passenger Manifest'.
-												</li>
-												<li>
-													Enabled the search feature to explore over 3000 flights and show results with upto 2 connecting flights. Applied validations for user assistance.
-												</li>
-												<li>
-													Applied validations for user assistance.
-												</li>
-											</ul>
-										</dd>
-								</dl>
-								<!--p>
-									<b>Objective: </b><br>Airline Reservation System for travelling in USA<br>
-									<b>GitHub Link : </b><a href="https://github.com/jatanpatel92/Airline-Reservation-System">Airline Reservation System</a><br>
-									<b>Tools: </b>PHP, MySQL, HTML5, JavaScript, jQuery, AJAX, CSS3 (Bootstrap)<br>
-									<b>My Contribution: </b><br>Design and implemented an online flight reservation system with features like 'Flight Search', 'Seat Availability', 'Fare Information' and 'Passenger Manifest'. Enabled the search feature to explore over 3000 flights and show results with upto 2 connecting flights. Applied validations for user assistance.
-								</p-->
-							</div>
-							<img class="aeroplane" id="aeroplane" src="img/aeroplane.png" alt="aeroplane" />
-						</li>
-						<li class="animate-in">
-							<div class="info">
-								<h2>Blood4Lives - A Virtual Blood Bank</h2>
-								<dl>
-									<dt>Objective</dt>
-										<dd><ul><li>An android application and Web server connecting blood seekers with eligible and potential blood donors</li></ul></dd>
-									<dt>GitHub Link : <a href="https://github.com/jatanpatel92/Blood4Lives">Blood4Lives</a></dt>
-									<dt>Tools</dt>
-										<dd><ul><li>Android SDK, RESTful, XML, PHP, MySQL</li></ul></dd>
-									<dt>Contribution</dt>
-										<dd>
-											<ul>
-												<li>
-													Worked on both Server and Client sides.
-												</li>
-												<li>
-													 Implemented Google Cloud Messaging (GCM) for Push Notifications and integrated with core version of the code as a part of Feature Driven Development (FDD) type of Agile Methodology.
-												</li>
-												<li>
-													Server Side development in PHP.
-												</li>
-											</ul>
-										</dd>
-								</dl>
-								<!--p>
-									<b>Objective: </b><br>An android application and Web server connecting blood seekers with eligible and potential blood donors<br>
-									<b>GitHub Link : </b><a href="https://github.com/jatanpatel92/Blood4Lives">Blood4Lives</a><br>
-									<b>Tools: </b>Android SDK, XML, PHP, MySQL<br>
-									<b>My Contribution: </b><br>Worked on both Server and Client sides: Implemented Google Cloud Messaging (GCM) for Push Notifications and integrated with core version of the code as a part of Feature Driven Development (FDD) type of Agile Methodology. Server Side development in PHP.
-								</p-->
-							</div>
-							<img class="balloon" id="android" src="img/android.png" alt="Balloon" />
-						</li>
-						<li>
-							<div class="info">
-								<h2>NIMS - NGO Information Management Suite</h2>
-								<dl>
-									<dt>Objective</dt>
-										<dd><ul><li>Client-Server architecture based information management system supporting the operations of our client NGO with user friendly features like cataloguing the work, evaluating the NGO projects and its employee performance as well as creating social maps of the population and the areas in which the NGO operates</li></ul></dd>
-									<dt>GitHub Link : <a href="https://github.com/jatanpatel92/NIMS">NIMS</a></dt>
-									<dt>Tools</dt>
-										<dd><ul><li>Android SDK, PHP, JavaScript, jQuery, XML, RESTful, Google Developers API, Timeline, MySQL, HTML5, CSS3(Twitter Bootstrap)</li></ul></dd>
-									<dt>Contribution</dt>
-										<dd>
-											<ul>
-												<li>
-													I was part of the server side team and played a major role in developing the live content management system(CMS) which allows the NGO admin to view, edit and analyse the work of the NGO.
-												</li>
-												<li>
-													 Integrated SIMILE (MIT) Timeline (timeline.js) on the server side website along with the data visualization APIs like 3D Google Pie charts and Google Maps.
-												</li>
-											</ul>
-										</dd>
-								</dl>
-								<!--p>
-									<b>Objective: </b><br>Client-Server architecture based information management system supporting the operations of our client NGO with user friendly features like cataloguing the work, evaluating the NGO projects and its employee performance as well as creating social maps of the population and the areas in which the NGO operates<br>
-									<b>GitHub Link : </b><a href="https://github.com/jatanpatel92/NIMS">NIMS</a><br>
-									<b>Tools: </b>Android SDK, PHP, JavaScript, jQuery, XML, RESTful, Google Developers API, Timeline, MySQL, HTML5, CSS3(Twitter Bootstrap)<br>
-									<b>My Contribution: </b><br>  
-								</p-->
-							</div>
-							<img class="nims" id="nims" src="img/nims.png" alt="NIMS" />
-						</li>
-						<li>
-							<div class="info">
-								<h2>Online Career Services Management System</h2>
-								<dl>
-									<dt>Objective</dt>
-										<dd><ul><li>Web based software for carrier services with the facilities like online registration, resume upload/view, upcoming company information, Live feeds and other useful features assisting Placement Cell, DA-IICT</li></ul></dd>
-									<dt>Live Link : <a href="http://placement.daiict.ac.in">DA-IICT placement</a></dt>
-									<dt>Tools</dt>
-										<dd><ul><li>PHP, JavaScript, jQuery, MySQL, HTML5, CSS3</li></ul></dd>
-									<dt>Contribution</dt>
-										<dd>
-											<ul>
-												<li>
-													My experience as a member of placement cell helped me to lead a team of 4 dedicated developers for this project.
-												</li>
-												<li>
-													 Designed the UI and database by understanding the requirements of the committee and engineered the system.
-												</li>
-											</ul>
-										</dd>
-								</dl>
-								<!--p>
-									<b>Objective: </b><br><br>
-									<b>Link: </b><br>
-									<b>Tools: </b><br>
-									<b>My Contribution: </b><br> 
-								</p-->
-							</div>
-							<img class="placement" src="img/placement.png" alt="placement" />
-						</li>
-						<li>
-							<div class="info">
-								<h2>Text Conversion Tool : Non-Unicode to Unicode</h2>
-								<dl>
-									<dt>Objective</dt>
-										<dd><ul><li>Effective desktop publishing in Indian Regional Languages</li></ul></dd>
-									<dt>Research Paper Link : <a href="https://www.researchgate.net/publication/258029934_Text_Conversion_Tool_Non_Unicode_to_">Text Conversion tool</a></dt>
-									<dt>Tools</dt>
-										<dd><ul><li>JAVA</li></ul></dd>
-									<dt>Contribution</dt>
-										<dd>
-											<ul>
-												<li>
-													Drafted the algorithm to convert DOS based Non-Unicode fonts into Unicode.
-												</li>
-												<li>
-													 Created a conversion tool in JAVA which utilizes Hash Map. Built a team of researchers in order to progress further in future.
-												</li>
-												<li>
-													 Over 300 downloads of the paper till present.
-												</li>
-											</ul>
-										</dd>
-								</dl>
-								<!--p>
-									<b>Objective: </b><br><br>
-									<b>Research Paper Link: </b><br>
-									<b>Tools: </b><br>
-									<b>My Contribution: </b><br> 
-								</p-->
-							</div>
-							<img class="unicode" src="img/unicode.jpg" alt="Unicode" />
-						</li>
-						<li>
-							<div class="info">
-								<h2>Online Library Administration System</h2>
-								<dl>
-									<dt>Objective</dt>
-										<dd><ul><li>Database and GUI Design to assist Library</li></ul></dd>
-									<dt>GitHub Link : <a href="https://github.com/jatanpatel92/Online-Library-Administration-System">Library Admin</a></dt>
-									<dt>Tools</dt>
-										<dd><ul><li>MySQL, JAVA, JSP, Servlet, JDBC</li></ul></dd>
-									<dt>Contribution</dt>
-										<dd>
-											<ul>
-												<li>
-													Fully developed the web application with various modules including 'Add Borrower', 'Books Check-in', 'Check out', 'Search' as well as 'Fines update and payment'.
-												</li>
-											</ul>
-										</dd>
-								</dl>
-								<!--p>
-									<b>Objective: </b><br>
-									<b>GitHub Link : </b><br>
-									<b>Tools: </b><br>
-									<b>My Contribution: </b><br> 
-								</p-->
-							</div>
-							<img class="library" src="img/library.jpg" alt="Library" />
-						</li>
-						<li>
-							<div class="info">
-								<h2>myDatabase</h2>
-								<dl>
-									<dt>Objective</dt>
-										<dd><ul><li>A Low Maintenance Database Software for Textual Data</li></ul></dd>
-									<dt>GitHub Link : <a href="https://github.com/jatanpatel92/myDatabase">Database Management System</a></dt>
-									<dt>Tools</dt>
-										<dd><ul><li>JAVA</li></ul></dd>
-									<dt>Contribution</dt>
-										<dd>
-											<ul>
-												<li>
-													Worked individually to establish a database software using core JAVA which stores textual data in files.
-												</li>
-												<li>
-													Implemented all 4 database functions: Selection, Insertion, Deletion and Updation by applying Random Access File Connector and Hash Map.
-												</li>
-												<li>
-													Query Optimization with the help of Indexing.
-												</li>
-											</ul>
-										</dd>
-								</dl>
-								<!--p>
-									<b>Objective: </b><br>
-									<b>GitHub Link : </b><br>
-									<b>Tools: </b><br>
-									<b>My Contribution: </b><br>
-								</p-->
-							</div>
-							<img class="database" src="img/database.png" alt="Database" />
-						</li>
-					</ul>
-				</div>
-			</section>
-			<br><br><br><br><br><br>
-			<section id="work">
-				<br><br><br>
-				<h1 id="skill">WORK</h1>
-				<div id="ei">
-					<table style="width:40%;text-align: center">
-						<tr>
-							<td><img id="ei" src="img/ei.jpg"></img></td>
-							<td><a href="http://www.mindspark.in/"><h2>Educational Initiatives</h2></a></td>						
-						</tr>
-					</table>
-					<h3>Jr. Software Engineer (Software Developer Equivalent)</h3>
-					<dl>
-						<dt>What I did?</dt>
-							<dd>
-								<ul>
-									<li>
-										Reengineered and upgraded the web based project ‘MindSparkEI’ (Maths) as part of designing cross browser compatible interactive, self-adaptive and self-learning product.
-									</li>
-									<li>
-										Builded 2 important JavaScript libraries with customization functionalities to increase the coding standards: Common.js, Graph.js
-									</li>
-									<li>
-										<b>Mathematical interactive tools:</b> by utilizing 3D libraries such as three.js; 2D and 3D screens for students to solve graph related high school geometry problems 
-									</li>
-									<li>
-										<b>Common.js:</b> A library of all the common configuration functions to assist faster development.
-									</li>
-									<li>
-										Enhanced Graph.js library such that other developers can easily grasp the functionalities and the library can smoothly be adapted.
-									</li>
-									<li>
-										Developed Many Graphic modules as part of designing cross browser compatible HTML5 Educational Games.
-									</li>
-								</ul>
-							</dd>
-						<dt>Tools</dt>
-							<dd><ul><li>HTML5, CSS3, JavaScript, PHP</li></ul></dd>
-						<dt>Libraries</dt>
-							<dd><ul><li>jQuery, common.js, graph.js, jCanvas.js, d3.js, three.js</li></ul></dd>
-						<dt>Product : <a href="http://www.mindspark.in/">MindSpark</a></dt>
-					</dl>
-					<h2 style="text-align:center">GLIMPSE OF MY WORK</h2>
-					<table style="width:100%">
-						<tr>
-							<td>
-								<!--a href="#popupVideo" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src="img/1.png"/></a-->
-								<div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
-									<iframe id="if2" src="http://mindspark-ei.s3.amazonaws.com/Enrichment_Modules/html5/introduction/227/src/index.html?noOfLevels=1&levelWiseMaxScores=0&lastLevelCleared=0&previousLevelLock=1" width="550" height="600" seamless=""></iframe>
-								</div>
-							</td>
-							<td>
-								<!--a href="#popupVideo" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src="img/2.png"/></a-->
-								<div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
-									<iframe id="if3" src="http://mindspark-ei.s3.amazonaws.com/Enrichment_Modules/html5/introduction/244/src/index.html?noOfLevels=1&levelWiseMaxScores=0&lastLevelCleared=0&previousLevelLock=1" width="550" height="600" seamless=""></iframe>
-								</div>
-							</td>
-						</tr>
-					</table>
-					<table style="width:100%">
-						<tr>
-							<td>
-								<div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
-									<iframe id="if4" src="http://mindspark-ei.s3.amazonaws.com/Enrichment_Modules/html5/questions/ADG/ADG_qcode_57718_1/src/index.html?m=0.5&b=0&showAns=false" width="100%" height="600" seamless=""></iframe>
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</section>
-			<section id="contact">
-				<br><br><br>
-				<h1 id="skill">CONTACT ME</h1>
-					<table style="width:100%;text-align: center">
-						<tr>
-							<td>
-								<a href="https://github.com/jatanpatel92"><img class="icons" src="img/git.png"/>GitHub</a>
-							</td>
-							<td>
-								<a href="https://www.linkedin.com/in/jatanpatel/en"><img class="icons" src="img/ln.png"/>LinkedIn</a>
-							</td>
-							<td>
-								<a href="https://www.facebook.com/jatan.patel.j10"><img class="icons" src="img/fb.png"/>Facebook</a>
-							</td>
-						</tr>
-					</table>
-			</section>
-		</div>
-		<script src="js/jquerymin.js"></script>
-		<script src="js/jquery_ui.js" type="text/javascript"></script>
-		<script src="js/PxLoader.js"	type="text/javascript"></script>
-		<script src="js/PxLoaderImage.js" type="text/javascript"></script>
-		<script src="js/myscript.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-		<script type="text/javascript">
-		google.load("visualization", "1", {packages:["gauge"]});
-		google.setOnLoadCallback(drawChart);
-		var flag=0;
-		function drawChart()
-		{
-			var data1 = google.visualization.arrayToDataTable([
-			  ['Label', 'Value'],
-			  ['JAVA', 80],
-			  ['C', 70],
-			  ['C++', 80],
-			  ['SQL', 75],
-			  ['Python', 30]
-			  
-			]);
-			var data2 = google.visualization.arrayToDataTable([
-			  ['Label', 'Value'],
-			  ['JavaScript', 80],
-			  ['jQuery', 80],
-			  ['HTML5', 85],
-			  ['CSS3', 79],
-			  ['PHP', 69]
-			]);
-			var options = {
-			  width: 1138, height: 300,
-			  redFrom: 90, redTo: 100,
-			  yellowFrom:75, yellowTo: 90,
-			  minorTicks: 5
-			};
-			var chart1 = new google.visualization.Gauge(document.getElementById('chart_div1'));
-			var chart2 = new google.visualization.Gauge(document.getElementById('chart_div2'));
-			google.visualization.events.addListener(chart1, 'ready', function () {
-				$('#chart_div1 circle:nth-child(1)').attr('fill', 'grey');
-				$('#chart_div1 circle:nth-child(2)').attr('fill', 'white');
-				$('#chart_div2 circle:nth-child(1)').attr('fill', 'grey');
-				$('#chart_div2 circle:nth-child(2)').attr('fill', 'white');
-			});
-			chart1.draw(data1, options);
-			chart2.draw(data2, options);
-			setInterval(function() {
-			  if(flag==0)
-			  {
-				  for(var i=0;i<5;i++)
-				  {
-					data1.setValue(i,1,parseInt(data1['Cc'][i][1]['ef'])+1);
-					data2.setValue(i,1,parseInt(data2['Cc'][i][1]['ef'])+1);
-				  }
-				  flag=1;
-			  }
-			  else
-			  {
-				  for(var i=0;i<5;i++)
-				  {
-					data1.setValue(i,1,parseInt(data1['Cc'][i][1]['ef'])-1);
-					data2.setValue(i,1,parseInt(data2['Cc'][i][1]['ef'])-1);
-				  }
-				  flag=0;
-			  }
-			  chart1.draw(data1, options);
-			  chart2.draw(data2, options);
-			}, 500);
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="shortcut icon" href="img/pic.png"/>
+    <title>Jatan Patel</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		img.img-front {
+			margin-left: 52px;
 		}
-		</script>
-		<script src="js/jquery.sequence-min.js"></script>
-		<script src="js/sequencejs-options.sliding-horizontal-parallax.js"></script>
-		<script type="text/javascript" src="js/jquery.scrollUp.js"></script>
-		<script>
-            $(function () {
-                        $.scrollUp({
-                            animation: 'fade',
-                            activeOverlay: '#00FFFF',
-                            scrollImg:
-							{
-                                active: true,
-                                type: 'background',
-                                src: '../img/top.png'
-                            }
-                        });
-                    $('.image-switch').addClass('active');
-			});
+	</style>
+	<style type="text/css">
+		#mainBubble {
+		  box-shadow: 0 0 4px rgba(0,0,0,0);
+		  font: 0.625em sans-serif;
+		  height: 800px;
+		  position: relative;
+		  width: 100%;
+		}
+				 
+		#mainBubble svg {
+		  left: 0;
+		  position: absolute;
+		  top: 0;
+		}				 
+		#mainBubble circle.topBubble {
+		  fill: #aaa;
+		  stroke: #666;
+		  stroke-width: 1.5px;
+		 }
+    </style>
+    <script type="text/javascript" src="js/d3.min.js" charset="utf-8"></script>
+</head>
 
-        </script>
-	</body>
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Jatan Patel</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Work</a>
+                    </li>
+					<li class="page-scroll">
+                        <a href="#skills">Skills</a>
+                    </li>
+					<li class="page-scroll">
+                        <a href="#projects">Projects</a>
+                    </li>
+					<li class="page-scroll">
+                        <a href="#education">Education</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/computer35.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Software Engineer</span>
+                        <hr class="star-light">
+                        <span class="skills">Full Stack Developer - DevOps Engineer - Data Engineer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Professional Experience</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/blackberry.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/nokia.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ei.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Skills</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>		
+			<div class="row" id="mainBubble">
+				<svg class="mainBubbleSVG" width="1180" height="650"></svg>
+			</div>			
+        </div>
+    </section>
+
+	<section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Projects</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/plugin.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/stoke.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/shopping.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+				<div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/airplane.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+				<div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/heart.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+				<div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/ngo.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+				<div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModa20" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/placements.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+				<div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModa21" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/unicode.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+				<div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModa22" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/library.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section class="success" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Education</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Ag_LM0dYbCkudEpiZmNMMkZ0NHNWYVF1ZGxGTnVVS0E&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+				<div class="col-lg-4">
+					<table>
+						<tr>
+							<td>
+								<img src="img/pic.png"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a target="_blank" href="https://www.dropbox.com/s/nnpzgjlthfubjb6/Resume_Jatan.pdf?dl=0" class="btn btn-lg btn-outline">
+									<i class="fa fa-file-text"></i>&#09;&#09;View Resume
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+                <div class="col-lg-4"><!-- col-lg-offset-2"-->
+                    <p>My experience of working on Enterprise, Open Source and Academic software projects; strong command over traditional and latest database technologies; familiarity with various Operating Systems as well as knowledge of collaborating with client, support and QA teams; have equipped me with the attributes and skills which can fuel my passion for Software Engineering and Computer Science.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>My demonstrated ability to research and develop features in existing or new products and services utilizing the concepts of Object Oriented Design, Big Data, Machine Learning, Natural Language Processing and Data Mining has been expanding my horizons! I understand the need of continuous education and learning with the advancement of technologies to provide quality solutions.</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>350 E Taylor St<br>San Jose, CA 95112</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Get Connected</h3>
+                        <ul class="list-inline">
+							<li>
+                                <a target="_blank" href="https://github.com/jatanpatel92" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+							<li>
+                                <a target="_blank" href="https://www.linkedin.com/in/jatanpatel/en" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+							<li>
+                                <a target="_blank" href="https://www.facebook.com/jatan.patel.j10" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Email</h3>
+                        <p>jatan.92@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; jatanpatel92.github.io 2015
+                    </div>
+                </div>
+            </div>
+        </div-->
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>BlackBerry</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/blackberry.png" class="img-responsive img-centered" alt="">
+							<ul style="text-align: left">
+								<li>
+									Advance research and development in Machine Learning, Data Mining and Natural Language Processing to create Enterprise Software Tools with Django, Python, JAVA, MongoDB and ElasticSearch.
+								</li>
+								<li>
+									Enterprise Web applications for effective Team Collaboration integrating WatchDox support services as well as Text and Data Summarization with the help of Django Framework, Python and JAVA.
+								</li>
+								<li>
+									Text mining for Information Retrieval, Information Extraction, Keyword Extraction, Concept Maps, Sentiment Analysis with NLTK, Apache Tika and Machine Learning algorithms.
+								</li>
+								<li>
+									Predictive Analysis of Security for DRM (Digital Rights Management) and IoT (Internet of Things) by developing multi-database distributed Big Data application using Elasticsearch for MongoDB Query Optimization and System Logs and Data Analysis with GUI developed in Kibana and Logstash. 
+								</li>
+								<li>
+									Working with remote software teams as a DevOps Engineer in SCRUM Agile Methodology utilizing JIRA and Slack.
+								</li>
+							</ul>
+                            <ul class="list-inline item-details">
+                                <li>Position:
+                                    <strong>Software Development Student Intern
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>August 2015 - December 2015
+                                    </strong>
+                                </li>
+                                <!--li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li-->
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Nokia - US</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/nokia.png" class="img-responsive img-centered" alt="">
+                            <ul style="text-align: left">
+								<li>
+									Web based software system development which assists 'Customer Support' department.
+								</li>
+								<li>
+									Designed, architected and implemented MVC framework with MongoDB, Node.js, Express.js and Angular.js (MEAN stack) based interactive web tools assisting the trades of services by Customer Support department.
+								</li>
+								<li>
+									UI and Front-end development with jQuery, Angular.js and Bootstrap3 frameworks.
+								</li>
+								<li>
+									Initiated and lead the adoption of new technologies into internal systems for faster performance.
+								</li>
+							</ul>
+                            <ul class="list-inline item-details">
+                                <li>Position:
+                                    <strong>Customer Support Services Intern
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>May 2015 - August 2015
+                                    </strong>
+                                </li>
+                                <li>Role:
+                                    <strong>Full Stack JavaScript Developer</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Educational Initiatives</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/ei.png" class="img-responsive img-centered" alt="">
+                            <ul style="text-align: left">
+								<li>
+									Reengineered and upgraded the web based project ‘MindSparkEI’ (Maths) as part of designing cross browser compatible interactive, self-adaptive and self-learning product.
+								</li>
+								<li>
+									Builded 2 important JavaScript libraries with customization functionalities to increase the coding standards: Common.js, Graph.js
+								</li>
+								<li>
+									<strong>Graph.js (Mathematical interactive tools):</strong> by utilizing 3D libraries such as three.js; 2D and 3D screens for students to solve graph related high school geometry problems
+								</li>
+								<li>
+									<strong>Common.js:</strong> A library of all the common configuration functions to assist faster development.
+								</li>
+								<li>
+									Enhanced Graph.js library such that other developers can easily grasp the functionalities and the library can smoothly be adapted.
+								</li>
+								<li>
+									Developed many graphic modules as part of designing cross browser compatible HTML5 Educational Games.
+								</li>
+							</ul>
+							<ul class="list-inline item-details">
+                                <li>Position:
+                                    <strong>Junior Software Engineer
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>June 2013 - June 2014
+                                    </strong>
+                                </li>
+                                <li>Role:
+                                    <strong>Software Developer
+                                    </strong>
+                                </li>
+                            </ul>
+							<h3 style="text-align:left"><u>Live Examples</u></h3>
+							<ol style="text-align:left">
+								<li>
+									<a target="_blank" href="http://mindspark-ei.s3.amazonaws.com/Enrichment_Modules/html5/introduction/227/src/index.html?noOfLevels=1&amp;levelWiseMaxScores=0&amp;lastLevelCleared=0&amp;previousLevelLock=1" >
+										Prime vs Composite Numbers
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://mindspark-ei.s3.amazonaws.com/Enrichment_Modules/html5/introduction/244/src/index.html?noOfLevels=1&amp;levelWiseMaxScores=0&amp;lastLevelCleared=0&amp;previousLevelLock=1" >
+										The Gambler's Fallacy
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://mindspark-ei.s3.amazonaws.com/Enrichment_Modules/html5/questions/ADG/ADG_qcode_57718_1/src/index.html?m=0.5&amp;b=0&amp;showAns=false" >
+										Equation of Line (y = mx + b)
+									</a>
+								</li>
+							</ol>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Elasticsearch + MongoDB&nbsp; = &nbsp;Query Optimization</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/plugin.png" class="img-responsive img-centered" alt="">
+                            <p>Utilized the updated plugin for Multi database cloud applications to optimize big data query and performance of the software. Fixed the bugs and updated the tool to support Elasticsearch and Kiana for data visualization.</p>
+                            <ul class="list-inline item-details">
+                                <li>Git:
+                                    <strong><a href="https://github.com/jatanpatel92/logstash-input-mongodb">MongoDB input plugin for logstash</a>
+                                    </strong>
+                                </li>
+                                <li>Tools:
+                                    <strong>Ruby, MongoDB, Elasticsearch, Logstash, Kibana
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Stock Market Prediction - Hidden Markov Model</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/stoke.png" class="img-responsive img-centered" alt="">
+                            <p>Hidden Markov Model is popular of finding a pattern from given series. Current research in the field of Artificial Intelligence and Machine Learning also involves understanding Financial Time series and predicting the market. Couple of research papers attracted me towards this and I thought of implementing them as an academic project. Hence, I trained 10 Hidden Markov Models with JAVA on financial time series of 2013 & 2014 through data provided by ‘Yahoo! Finance’ for 10 different companies. Efficiently predicted future stock prices of 2015. Maximized the profit using Dynamic Programming algorithm in O(n) time.</p>
+                            <ul class="list-inline item-details">
+                                <li>Git:
+                                    <strong><a target="_blank" href="https://github.com/jatanpatel92/Stock-Market-Price-Prediction">Stoke price prediction</a>
+                                    </strong>
+                                </li>
+                                <li>Tools:
+                                    <strong>JAVA
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>E-commerce Product Recommendation - Aspect based Sentiment Analysis</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/shopping.png" class="img-responsive img-centered" alt="">
+                            <p>Customer Reviews for any E-commerce company are essential to be analyzed as a user willing to buy particular product could not ignore reviews describing the features of the product desired by him/her the most. So, I attempted to apply the knowledge of Natural language Processing to simplify this and end up programming a tool in JAVA (with ‘Apache OpenNLP’ and ‘Stanford Dependencies Parser’ libraries) which suggests the best cameras with the most user desired features from 2000 reviews. I implemented ‘Aspect based Sentiment Analysis’ to filter customer reviews for a particular feature.</p>
+                            <ul class="list-inline item-details">
+                                <li>Git:
+                                    <strong><a target="_blank" href="https://github.com/jatanpatel92/E-commerce-Product-Prediction-by-Aspect-Based-Sentiment-Analysis">Camera Recommendation</a>
+                                    </strong>
+                                </li>
+                                <li>Tools:
+                                    <strong>JAVA, Apache OpenNLP, Stanford NLP tools
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Airline Reservation System</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/airplane.png" class="img-responsive img-centered" alt="">
+                            <p>Design and implemented an online flight reservation system with features like 'Flight Search', 'Seat Availability', 'Fare Information' and 'Passenger Manifest'. Enabled the search feature to explore over 3000 flights and show results with upto 2 connecting flights. Applied validations for user assistance. Applied data validations for user assistance.</p>
+                            <ul class="list-inline item-details">
+                                <li>Git:
+                                    <strong><a target="_blank" href="https://github.com/jatanpatel92/Airline-Reservation-System">
+									Airplane Reservation System</a>
+                                    </strong>
+                                </li>
+                                <li>Tools:
+                                    <strong>PHP, MySQL, Bootstrap, JavaScript, jQuery, CSS3, HTML5
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Blood4Lives - A virtual blood bank</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/heart.png" class="img-responsive img-centered" alt="">
+                            <p>Worked on both Server and Client sides. Implemented Google Cloud Messaging (GCM) for Push Notifications and integrated with core version of the code as a part of Feature Driven Development (FDD) type of Agile Methodology. Server Side development in PHP.</p>
+                            <ul class="list-inline item-details">
+                                <li>Git:
+                                    <strong><a target="_blank" href="https://github.com/jatanpatel92/Blood4Lives">
+									blood4lives</a>
+                                    </strong>
+                                </li>
+                                <li>Tools:
+                                    <strong>Android SDK, RESTful API, PHP, MySQL, SQLite
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>NIMS - NGO Information Management Suite</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/ngo.png" class="img-responsive img-centered" alt="">
+                            <p>Client-Server architecture based information management system supporting the operations of our client NGO with user friendly features like cataloguing the work, evaluating the NGO projects and its employee performance as well as creating social maps of the population and the areas in which the NGO operates. I was part of the server side team and played a major role in developing the live content management system(CMS) which allows the NGO admin to view, edit and analyse the work of the NGO. Integrated SIMILE (MIT) Timeline (timeline.js) on the server side website along with the data visualization APIs like 3D Google Pie charts and Google Maps.</p>
+                            <ul class="list-inline item-details">
+                                <li>Git:
+                                    <strong><a target="_blank" href="https://github.com/jatanpatel92/NIMS">
+									NIMS</a>
+                                    </strong>
+                                </li>
+                                <li>Tools:
+                                    <strong>PHP, JavaScript, jQuery, RESTful WS, Google Developers API, SIMILE Timeline, MySQL, HTML5, CSS3, Bootstrap, Android SDK
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="portfolio-modal modal fade" id="portfolioModa20" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Online Career Services Management System</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/placements.png" class="img-responsive img-centered" alt="">
+                            <p>Web based software for carrier services with the facilities like online registration, resume upload/view, upcoming company information, Live feeds and other useful features assisting Placement Cell, DA-IICT. My experience as a member of placement cell helped me to lead a team of 4 dedicated developers for this project. Designed the UI and database by understanding the requirements of the committee and engineered the system.</p>
+                            <ul class="list-inline item-details">
+                                <li>Live:
+                                    <strong><a target="_blank" href="http://placement.daiict.ac.in">
+									Placements, DA-IICT</a>
+                                    </strong>
+                                </li>
+                                <li>Tools:
+                                    <strong>JavaScript, jQuery, MySQL, HTML5, CSS3
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="portfolio-modal modal fade" id="portfolioModa21" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Text Conversion Tool: Non-Unicode to Unicode</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/unicode.png" class="img-responsive img-centered" alt="">
+                            <p>A tool which supports effective desktop publishing in Indian Regional Languages. Drafted an algorithm to convert DOS based Non-Unicode fonts into Unicode. Created a conversion tool in JAVA which utilizes Hash Map. Built a team of researchers in order to progress further in future. 900+ viewers of the paper till present.</p>
+                            <ul class="list-inline item-details">
+                                <li>Paper:
+                                    <strong><a target="_blank" href="https://www.researchgate.net/publication/258029934_Text_Conversion_Tool_Non_Unicode_to_">
+									Text Conversions</a>
+                                    </strong>
+                                </li>
+                                <li>Tools:
+                                    <strong>JAVA
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="portfolio-modal modal fade" id="portfolioModa22" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Online Library Administration System</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/library.png" class="img-responsive img-centered" alt="">
+                            <p>Database and GUI Design to assist Library Admin. Fully developed the web application with various modules including 'Add Borrower', 'Books Check-in', 'Check out', 'Search' as well as 'Fines update and payment'.</p>
+                            <ul class="list-inline item-details">
+                                <li>Git:
+                                    <strong><a target="_blank" href="https://github.com/jatanpatel92/Online-Library-Administration-System">
+									Library Admin</a>
+                                    </strong>
+                                </li>
+                                <li>Tools:
+                                    <strong>MySQL, JAVA, JDBC, J2EE
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+	<script src="js/bubble.js"></script>
+</body>
+
 </html>
