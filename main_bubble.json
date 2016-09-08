@@ -4,8 +4,7 @@
 		"children":[
 			{"name": "JAVA"},
 			{"name": "PHP"},
-			{"name": "Python"},
-			{"name": "NodeJS"}
+			{"name": "Python"}
 		]},
 		{"name":"Front-End",
 		"children":[
@@ -13,10 +12,9 @@
 			{"name": "CSS3"},
 			{"name": "JavaScript"},
 			{"name": "jQuery"},
-			{"name": "AngularJS"},
-			{"name": "d3JS"}
+			{"name": "Angular"}
 		]},
-		{"name":"Database", 
+		{"name":"Database Systems", 
 		"children":[
 			{"name": "MySQL"},
 			{"name": "MongoDB"},
@@ -26,11 +24,9 @@
 		{"name":"Full-Stack", 
 		"children":[
 			{"name": "Django"},
-			{"name": "MEAN"},
-			{"name": "LAMP"},
-			{"name": "WAMP"},
-			{"name": "ELK"},
-			{"name": "Meteor"}
+			{"name": "Elastic"},
+			{"name": "Flask"},
+			{"name": "RubyOnRails"}
 		]}
 	]
 }
