@@ -14,18 +14,18 @@
 			{"name": "jQuery"},
 			{"name": "Angular"}
 		]},
-		{"name":"Database Systems", 
+		{"name":"Database Systems",
 		"children":[
 			{"name": "MySQL"},
 			{"name": "MongoDB"},
 			{"name": "SQLite"},
 			{"name": "Elasticsearch"}
 		]},
-		{"name":"Full-Stack", 
+		{"name":"Full-Stack",
 		"children":[
 			{"name": "Django"},
 			{"name": "Elastic"},
-			{"name": "Flask"},
+			{"name": "Meteor"},
 			{"name": "RubyOnRails"}
 		]}
 	]
