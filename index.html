@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-	<link rel="shortcut icon" href="img/pic.png"/>
+	<link rel="shortcut icon" href="img/computer35.png"/>
     <title>Jatan Patel</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -36,17 +36,32 @@
 	<style type="text/css">
 		#mainBubble {
 		  box-shadow: 0 0 4px rgba(0,0,0,0);
-		  font: 0.625em sans-serif;
-		  height: 800px;
+		  /*font: 0.625em sans-serif;*/
+		 /* height: 800px;*/
 		  position: relative;
-		  width: 150%;
-      margin-left: -25%;
+		  width: 100%;
+      padding-bottom: 56.25%;
+      resize: both;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*border: 1px solid black;*/
 		}
-
-		#mainBubble svg {
-		  left: 0;
+    #mainBubble svg {
 		  position: absolute;
 		  top: 0;
+      left: 3%;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      max-width: 100%;
+      max-height: 100%;
+      /*border: 1px solid black;*/
+      display: flex;
+      justify-content: center;
 		}
 		#mainBubble circle.topBubble {
 		  fill: #aaa;
@@ -54,7 +69,7 @@
 		  stroke-width: 1.5px;
 		 }
     </style>
-    <script type="text/javascript" src="js/d3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 
 <body id="page-top" class="index">
@@ -109,11 +124,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/computer35.png" alt="">
+                    <!--img class="img-responsive" src="img/computer35.png" alt=""-->
+                    <img class="img-responsive" src="img/pic.jpeg" alt="" style="
+                        width: 300px;
+                        height: 400px;
+                    ">
                     <div class="intro-text">
-                        <span class="name">Software Engineer</span>
+                        <span class="name">Jatan Patel</span>
                         <hr class="star-light">
-                        <span class="skills">Software Developer - Data Engineer</span>
+                        <span class="skills">Senior Software Engineer - Big Data Distributed Systems - Data Engineer - Microservices</span>
                     </div>
                 </div>
             </div>
@@ -129,6 +148,24 @@
                     <hr class="star-primary">
                 </div>
             </div>
+            <div class="row">
+              <div class="col-sm-4 portfolio-item">
+
+              </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfoliomodal13" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/walmart.png" class="img-responsive img-front" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+
+                </div>
+              </div>
             <div class="row">
               <div class="col-sm-4 portfolio-item">
                   <a href="#portfoliomodal12" class="portfolio-link" data-toggle="modal">
@@ -205,7 +242,7 @@
                 </div>
             </div>
 			<div class="row" id="mainBubble">
-				<svg class="mainBubbleSVG" width="1180" height="650"></svg>
+				<!--svg class="mainBubbleSVG"></svg-->
 			</div>
         </div>
     </section>
@@ -355,12 +392,15 @@
 					<table>
 						<tr>
 							<td>
-								<img src="img/pic.png"/>
+                <img src="img/pic.jpeg" style="
+                    width: 300px;
+                    height: 400px;
+                ">
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<a target="_blank" href="https://drive.google.com/file/d/1dffQZKllQIXsFuyn9LQ9_LjhPMiQfEKc/view?usp=sharing" class="btn btn-lg btn-outline">
+								<a target="_blank" href="https://drive.google.com/file/d/1auegVoa1Z0Ub3BNDY363IbF2nPUMz_dE/view?usp=sharing" class="btn btn-lg btn-outline">
 									<i class="fa fa-file-text"></i>&#09;&#09;View Resume
 								</a>
 							</td>
@@ -368,9 +408,11 @@
 					</table>
 				</div>
                 <div class="col-lg-8"><!-- col-lg-offset-2"-->
-                    <p>Seasoned Software Engineer with over 5 years of experience in creating and executing innovative software solutions to enhance business productivity and product quality.</p>
+                    <p>Seasoned Software Engineer with over 7 years of experience in designing, creating and executing innovative software solutions to enhance business productivity and product quality.</p>
+                    <p>Hands on experience with the Big Data Distributed Systems and data engineering to build highly scalable services.</p>
                     <p>Relevant experience of coordinating with clients and cross-functional teams in Agile methodology of Software Development Life Cycle and Scrum project management.</p>
-                    <p>With understanding of the need of continuous learning with the advancement of technologies to provide quality solutions.</p>
+                    <p>Zeal of continuous learning with the advancement of technologies to provide quality solutions.</p>
+                    <p>A team player with the habit of writing well-structured and smoothly maintainable code.</p>
                 </div>
             </div>
         </div>
@@ -512,7 +554,7 @@
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong>April 2019 - Present
+                                    <strong>April 2019 - July 2022
                                     </strong>
                                 </li>
                                 <!--li>Service:
@@ -1030,6 +1072,63 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
 	<script src="js/bubble.js"></script>
+  <div class="portfolio-modal modal fade" id="portfoliomodal13" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                  <div class="rl">
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="modal-body">
+                          <h2>Walmart Inc</h2>
+                          <hr class="star-primary">
+                          <img src="img/portfolio/walmart.png" class="img-responsive img-centered" alt="">
+            <ul style="text-align: left">
+              <li>
+                Design and Development of JAVA-based Event-Driven Spring Boot Microservices to perform Data Ingestion operations. Building persistent data pipelines to handle millions of inventory operations and make purchase orders for the replenishments of the products using Apache Kafka, Apache Spark, Scala, Python, Scheduling, and Executing ETL jobs utilizing Apache Airflow Stack and Hybrid Cloud platforms.
+              </li>
+              <li>
+                Built application JAR files using Jenkins and Docker for CI/CD on Apache Tomcat servers with orchestrating open-source Kubernetes to deploy the services which scale the servers upon demand.
+              </li>
+              <li>
+                Deriving logic based on system requirements of availability, consistency, data partitioning, and fault tolerance; performing data analysis, and troubleshooting production issues to persist the data across global database systems which utilizes the NoSQL and SQL-based Database Systems like Hive, Cassandra, and Oracle DB.
+              </li>
+              <li>
+                Coordinating with cross-functional global teams for User Acceptance and end-to-end testing to meet the timely deliveries of the products and services.
+              </li>
+              <li>
+                Identifying and writing Unit test cases for the requirements to ensure the upstream and downstream data flow of the system is intact.
+              </li>
+              <li>
+                Code review sessions for peer-to-peer review with fellow developers and juniors to identify and improve coding standards for product quality and tech excellence.
+              </li>
+            </ul>
+                          <ul class="list-inline item-details">
+                              <li>Position:
+                                  <strong>Senior Software Engineer
+                                  </strong>
+                              </li>
+                              <li>Date:
+                                  <strong>July 2022 - Present
+                                  </strong>
+                              </li>
+                              <!--li>Service:
+                                  <strong><a href="http://startbootstrap.com">Web Development</a>
+                                  </strong>
+                              </li-->
+                          </ul>
+                          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
 </body>
 
 </html>
