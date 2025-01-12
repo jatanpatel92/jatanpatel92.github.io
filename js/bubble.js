@@ -43,9 +43,20 @@ const data = {
     { name: "Scrum", value: 20 },
     { name: "Waterfall", value: 20 },
     { name: "Cassandra", value: 40 },
-    { name: "GCP", value: 40 },
     { name: "Cloud", value: 40 },
-    { name: "Big Data", value: 40 }
+    { name: "PyTorch", value: 20 },
+    { name: "TensorFlow", value: 40 },
+    { name: "Langchain", value: 30 },
+    { name: "AWS", value: 20 },
+    { name: "Azure", value: 20 },
+    { name: "GCP", value: 20 },
+    { name: "RubyOnRails", value: 45 },
+    { name: "BDD", value: 20 },
+    { name: "TDD", value: 20 },
+    { name: "Mockito", value: 30 },
+    { name: "SVN", value: 10 },
+    { name: "Spock", value: 20 },
+    { name: "Groovy", value: 20 }
     // Add more child nodes as needed
   ]
 };
